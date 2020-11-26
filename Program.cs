@@ -130,7 +130,7 @@ namespace Lab3
                                     }
                                     catch (ArgumentException ex)
                                     {
-                                        Console.WriteLine($"{ex.Message}, повторите попытку");
+                                        Console.WriteLine($"{ex.Message}, повторите попытку\n");
                                         goto case 3;
                                     }
                                 }
@@ -155,7 +155,7 @@ namespace Lab3
                             break;
 
                         default:
-                            Console.WriteLine("Нет такого действия, повторите попытку");
+                            Console.WriteLine("Нет такого действия, повторите попытку\n");
                             goto Wrong_action;
                     }
                     goto Choose_action;
@@ -170,7 +170,7 @@ namespace Lab3
                     break;
 
                 default:
-                    Console.WriteLine("Нет такого действия, повторите попытку");
+                    Console.WriteLine("Нет такого действия, повторите попытку\n");
                     goto Choose_action;
             }
         }
