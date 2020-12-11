@@ -78,13 +78,13 @@ namespace Lab3
         }
     }
 
-    internal class List_of_contacts
+    internal class ListOfContacts
     {
         public List<Person> people;
 
-        public List_of_contacts() => people = new List<Person>();
+        public ListOfContacts() => people = new List<Person>();
 
-        public List_of_contacts(List<Person> buf) => people = buf;
+        public ListOfContacts(List<Person> buf) => people = buf;
 
         public void Add_new_contact(string name)
         {
@@ -94,7 +94,7 @@ namespace Lab3
 
         public void Add_number(Number number, int index) => people[index].Add_number(number);
 
-        public List_of_contacts Find_contacts(string data)
+        public ListOfContacts Find_contacts(string data)
         {
             List<Person> buf_list = new List<Person>();
             for (int i = 0; i < people.Count; i++)
@@ -105,7 +105,7 @@ namespace Lab3
                 if (people[i].Check_numbers(data))
                     buf_list.Insert(buf_list.Count, people[i]);
             }
-            List_of_contacts return_value = new List_of_contacts(buf_list);
+            ListOfContacts return_value = new ListOfContacts(buf_list);
             return return_value;
         }
 

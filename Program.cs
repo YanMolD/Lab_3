@@ -12,7 +12,7 @@ namespace Lab3
             string buf;
             int buf_int;
             int type = 0;
-            List_of_contacts Contacts = new List_of_contacts();
+            ListOfContacts Contacts = new ListOfContacts();
             Contacts.Add_new_contact("AB");
             Contacts.Add_new_contact("AC");
             Contacts.Add_new_contact("ABC");
